@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const addMediumZoom = () => {
     const zoom = mediumZoom(document.querySelectorAll('#article-container :not(a)>img'))
-    zoom.on('open', e => {
+    zoom.on('off', e => {
       const photoBg = document.documentElement.getAttribute('data-theme') === 'dark' ? '#121212' : '#fff'
       zoom.update({
         background: photoBg
